@@ -18,28 +18,28 @@ export default function AuraHero() {
           />
 
           {/* Content */}
-          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20">
+          <div className="relative pt-20 z-10 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20">
             {/* Left Content */}
-            <div className="w-full max-w-xl space-y-5 text-center md:text-left">
-              <h2 className="text-3xl sm:text-4xl lg:text-[52px] font-bold leading-snug sm:leading-[120%] lg:leading-[150%]">
+            <div className="w-full max-w-3xl space-y-5 text-center md:text-left">
+              <h2 className="text-3xl font-fraunces sm:text-4xl lg:text-[52px] font-bold leading-snug sm:leading-[120%] lg:leading-[150%]">
                 What Is Your Aura Trying <br className="hidden sm:block" /> To Tell You?
               </h2>
 
-              <p className="text-base sm:text-lg lg:text-[20px] font-medium leading-relaxed text-gray-200">
+              <p className="font-poppins text-base sm:text-lg lg:text-[20px] font-medium leading-relaxed text-gray-200">
                 Uncover the emotional and energetic blocks that are silently<br className="hidden sm:block" /> shaping your life.
               </p>
-              <p className="text-base sm:text-lg lg:text-[20px] font-medium leading-relaxed text-gray-200">
+              <p className="font-poppins text-base sm:text-lg lg:text-[20px] font-medium leading-relaxed text-gray-200">
                 Your aura holds the answers. Get a deeply personal aura <br className="hidden sm:block" /> scan and report, based on your photo and energy field.
               </p>
 
-              <div className="inline-flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-[#020725]/80 border border-[#020725]/40 rounded-lg px-6 py-4 w-fit backdrop-blur">
+              <div className="inline-flex flex-row items-start gap-4 bg-[#020725]/80 border border-[#020725]/40 rounded-lg md:px-6 px-2 py-4 w-fit backdrop-blur">
                 <div className="text-sm sm:text-base text-white">
                   <span className="block font-medium">Limited-Time Offer</span>
-                  <span className="text-xs text-gray-300">
+                  <span className="text-xs text-gray-300 font-poppins">
                     Today&apos;s orders get their report delivered within 3 hours
                   </span>
                 </div>
-                <div className="bg-[#FE5957] text-white px-4 py-2 rounded-md text-sm font-semibold text-center whitespace-nowrap">
+                <div className="bg-[#FE5957] text-white md:px-4 px-2 py-2 rounded-md text-sm font-semibold text-center whitespace-nowrap">
                   ₹499 Only<br />
                   <span className="text-xs font-normal text-white/80">(Regular Price ₹1,499)</span>
                 </div>

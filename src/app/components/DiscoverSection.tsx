@@ -33,8 +33,8 @@ const FEATURES = [
 export default function DiscoverSection() {
   return (
     <section className="bg-black text-white  px-[70px] py-16 text-center">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-2">What You’ll Discover</h2>
-      <p className="text-gray-300 mb-10">
+      <h2 className="text-2xl sm:text-3xl lg:text-[42px] font-bold mb-2">What You’ll Discover</h2>
+      <p className="text-sm sm:text-base lg:text-[16px] text-[#D9D9D9] mb-10">
         In your personalised Aura Report, you’ll uncover:
       </p>
 
@@ -49,13 +49,13 @@ export default function DiscoverSection() {
                 className="object-contain"
               />
             </div>
-            <h3 className="font-semibold mb-2 text-sm sm:text-base">{item.title}</h3>
-            <p className="text-xs sm:text-sm text-gray-400">{item.description}</p>
+            <h3 className="font-semibold mb-2 text-base lg:text-[20px]">{item.title}</h3>
+            <p className="text-sm sm:text-base lg:text-[16px] text-[#D9D9D9]">{item.description}</p>
           </div>
         ))}
       </div>
 
-      <p className="mt-10 text-sm text-gray-400 max-w-xl mx-auto">
+      <p className="mt-10 text-sm sm:text-base lg:text-[16px] text-[#D9D9D9] max-w-xl mx-auto">
         All this from just a photo and your date of birth.<br />
         Prepared manually and delivered with care — within 3 Hours
       </p>
