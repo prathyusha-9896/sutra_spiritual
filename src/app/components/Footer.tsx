@@ -19,20 +19,26 @@ export default function Footer() {
             </svg>
 
         {/* Divider */}
-        <hr className="w-full border-t border-gray-700" />
+        <hr className="w-full border-t-[2px] border-[#272727]" />
 
         {/* Footer bottom row */}
-        <div className="w-full flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400 pt-4">
-          <p>© 2025, Sutra Spiritual</p>
-          <div className="flex gap-4 mt-2 sm:mt-0">
-            <Link href="/privacy-policy" className="hover:text-white">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="hover:text-white">
-              Terms & Condition
-            </Link>
-          </div>
-        </div>
+<div className="w-full flex flex-col sm:flex-row justify-between items-center  text-white pt-4 gap-2 sm:gap-0 text-center">
+    <p className="order-2 sm:order-none text-[11px] leading-[18.7px] md:block hidden">© 2025, Sutra Spiritual</p>
+
+  {/* Links on top (centered on mobile, row on desktop) */}
+  <div className="flex justify-between w-full sm:w-auto pb-6 gap-4 text-[16px] leading-[28px] ">
+    <Link href="/privacy-policy" className="text-white">
+      Privacy Policy
+    </Link>
+    <Link href="/terms" className="text-white">
+      Terms & Condition
+    </Link>
+  </div>
+
+  {/* Copyright (below on mobile) */}
+  <p className="order-2 sm:order-none text-[11px] leading-[18.7px] md:hidden block ">© 2025, Sutra Spiritual</p>
+</div>
+
       </div>
     </footer>
   );

@@ -44,7 +44,7 @@ export default function FaqAccordion() {
             key={i}
             className="rounded-xl overflow-hidden relative transition-all duration-300"
             style={{
-              backgroundImage: `url('/card.svg')`,
+              backgroundImage: `url('/faqbg.svg')`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}

@@ -32,7 +32,7 @@ const FEATURES = [
 
 export default function DiscoverSection() {
   return (
-    <section className="bg-black text-white  px-[70px] py-16 text-center">
+    <section className="bg-black text-white px-[20px]  md:px-[70px] py-16 md:text-center text:start">
       <h2 className="text-2xl sm:text-3xl lg:text-[42px] font-bold mb-2">What You’ll Discover</h2>
       <p className="text-sm sm:text-base lg:text-[16px] text-[#D9D9D9] mb-10">
         In your personalised Aura Report, you’ll uncover:
@@ -40,18 +40,26 @@ export default function DiscoverSection() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
         {FEATURES.map((item) => (
-          <div key={item.title} className="flex flex-col items-center text-center px-2">
-            <div className="w-20 h-20 mb-4 relative">
-              <Image
-                src={item.icon}
-                alt={item.title}
-                fill
-                className="object-contain"
-              />
-            </div>
-            <h3 className="font-semibold mb-2 text-base lg:text-[20px]">{item.title}</h3>
-            <p className="text-sm sm:text-base lg:text-[16px] text-[#D9D9D9]">{item.description}</p>
-          </div>
+<div key={item.title} className="flex md:flex-col items-center text-center px-2">
+  <div className="flex flex-row md:flex-col items-center justify-center md:text-center text-left gap-4">
+    {/* Icon */}
+    <div className="w-20 h-20 relative shrink-0">
+      <Image
+        src={item.icon}
+        alt={item.title}
+        fill
+        className="object-contain"
+      />
+    </div>
+
+    {/* Text Content */}
+    <div>
+      <h3 className="font-semibold text-base lg:text-[20px] mb-1">{item.title}</h3>
+      <p className="text-sm sm:text-base lg:text-[16px] text-[#D9D9D9]">{item.description}</p>
+    </div>
+  </div>
+</div>
+
         ))}
       </div>
 

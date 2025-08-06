@@ -24,14 +24,14 @@ export default function Header() {
         {/* CTA Button */}
         <Link href="#aura-report">
               <button
-              className="text-white md:text-[14px] text-[10px] font-semibold z-10 rounded-md px-3 md:px-6 py-2 shadow-sm hover:opacity-90 transition relative overflow-hidden"
-              style={{
-                  backgroundImage: 'url("/Headerbutton.svg")',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundColor:'white',
-              }}
+              className="text-black md:text-[14px] text-[10px] bg-[#ffffff] font-semibold z-10 rounded-md px-3 md:px-6 py-2 shadow-sm hover:opacity-90 transition relative overflow-hidden"
+              // style={{
+              //     backgroundImage: 'url("/Headerbutton.svg")',
+              //     backgroundSize: 'cover',
+              //     backgroundPosition: 'center',
+              //     backgroundRepeat: 'no-repeat',
+              //     backgroundColor:'white',
+              // }}
               >
               Get My Aura Report Now
               </button>

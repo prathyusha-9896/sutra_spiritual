@@ -46,7 +46,7 @@ export default function TestimonialsSlider() {
   };
 
   return (
-    <section className="bg-black text-white min-h-screen flex items-center justify-center px-4 sm:pl-20">
+    <section className="bg-black text-white min-h-screen flex items-center justify-center pl-4 sm:pl-20">
       <div className="relative w-full ">
         {/* Background */}
         <Image
@@ -56,6 +56,7 @@ export default function TestimonialsSlider() {
           className="absolute inset-0 object-cover w-full h-full pointer-events-none select-none md:block hidden" 
           priority
         />
+
 
         {/* Content */}
         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-20 min-h-[720px] w-full">
@@ -75,66 +76,67 @@ export default function TestimonialsSlider() {
             </div>
           </div>
 
-          {/* Right - Carousel */}
-          <div
-            ref={containerRef}
-            className="w-full max-w-[800px] overflow-hidden"
-          >
-            <div
-              className="flex transition-transform duration-500 ease-in-out gap-4"
-              style={{
-                transform: `translateX(-${current * (CARD_WIDTH + GAP)}px)`,
-                width: `${testimonials.length * (CARD_WIDTH + GAP)}px`,
-              }}
-            >
-              {testimonials.map((item, index) => (
-              <div
-                key={index}
-                className="shrink-0 md:w-[350px] w-[300px] flex justify-center items-center"
-              >
-                <div
-                  className="relative w-full p-6 pt-8 rounded-2xl overflow-hidden text-white h-full flex flex-col items-center text-center"
-                  style={{
-                    backgroundImage: `url('/red.png')`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                >
-                  {/* Avatar */}
-                  <div className="w-20 h-20 rounded-full overflow-hidden mb-6">
-                    <Image
-                      src={item.image}
-                      alt={item.name}
-                      width={80}
-                      height={80}
-                      className="object-cover"
-                    />
-                  </div>
+{/* Right - Carousel */}
+<div className="relative z-10 w-full max-w-[800px] overflow-hidden">
+  {/* Mobile-only background image */}
+  <Image
+    src="/testimonialbgmobile.svg"
+    alt="Mobile Testimonial Background"
+    fill
+    className="absolute inset-0 object-cover w-full h-full pointer-events-none select-none block md:hidden z-0"
+  />
 
-                  {/* Testimonial Text */}
-                  <p className="text-base text-start leading-relaxed mb-6 px-1">
-                    {item.text}
-                  </p>
+  <div
+    ref={containerRef}
+    className="flex transition-transform duration-500 ease-in-out gap-4 my-10 relative"
+    style={{
+      transform: `translateX(-${current * (CARD_WIDTH + GAP)}px)`,
+      width: `${testimonials.length * (CARD_WIDTH + GAP)}px`,
+    }}
+  >
+    {testimonials.map((item, index) => (
+      <div
+        key={index}
+        className="shrink-0 w-[300px] md:w-[350px] flex justify-center items-center"
+      >
+        <div className="relative w-full p-6 pt-8 rounded-2xl bg-[#2C2C2C] overflow-hidden text-white h-full flex flex-col items-center text-center">
+          {/* Avatar */}
+          <div className="w-20 h-20 rounded-full overflow-hidden mb-6">
+            <Image
+              src={item.image}
+              alt={item.name}
+              width={80}
+              height={80}
+              className="object-cover"
+            />
+          </div>
 
-                  {/* Divider */}
-                  <div className="w-full h-px bg-white/20 my-2"></div>
-                    <div className="flex items-center justify-between w-full mt-4">
-                      {/* Name & Location - aligned to left */}
-                      <div className="text-start">
-                        <div className="text-base font-semibold">{item.name}</div>
-                        <div className="text-sm text-white/60">{item.location}</div>
-                      </div>
+          {/* Testimonial Text */}
+          <p className="text-base text-start leading-relaxed mb-6 px-1">
+            {item.text}
+          </p>
 
-                      {/* Stars - aligned to right */}
-                      <div className="flex items-center">
-                        <Image src="/fivestar.png" alt="Rating" width={100} height={20} />
-                      </div>
-                    </div>
-                </div>
-              </div>
-              ))}
+          {/* Divider */}
+          <div className="w-full h-px bg-white/20 my-2"></div>
+
+          <div className="flex items-center justify-between w-full mt-4">
+            {/* Name & Location */}
+            <div className="text-start">
+              <div className="text-base font-semibold">{item.name}</div>
+              <div className="text-sm text-white/60">{item.location}</div>
+            </div>
+
+            {/* Stars */}
+            <div className="flex items-center">
+              <Image src="/fivestar.png" alt="Rating" width={100} height={20} />
             </div>
           </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
         </div>
       </div>
     </section>

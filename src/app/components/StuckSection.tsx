@@ -8,7 +8,7 @@ export default function StuckSection() {
       {/* Left Image */}
       <div className="w-full lg:w-1/2 relative h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px]">
         <Image
-          src="/stuckimg.png"
+          src="/stuckimage.png"
           alt="Feeling stuck illustration"
           fill
           className="object-contain"
