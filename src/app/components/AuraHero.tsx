@@ -10,7 +10,7 @@ export default function AuraHero() {
         <div className="relative rounded-xl overflow-hidden px-4 sm:px-6 md:px-10 lg:px-16 py-10 min-h-[860px] md:min-h-[720px]">
           {/* Background */}
           <Image
-            src="/main.png"
+            src="/main.svg"
             alt="Connect Background"
             fill
             className="absolute inset-0 object-cover w-full h-full pointer-events-none select-none md:block hidden"
