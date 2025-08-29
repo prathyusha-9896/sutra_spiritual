@@ -40,7 +40,7 @@ export default function ConnectSection() {
                 Start your aura scan today — before this limited-time ₹499 offer ends.
               </p>
 
-                    <button
+                    <button onClick={() => window.location.href = "https://rzp.io/rzp/w608lnD"}
                     className="text-black text-[12px] mt-2 bg-[#ffffff] sm:text-[14px] lg:text-[14px] font-bold leading-[150%] z-10 rounded-md px-6 py-2 shadow-sm hover:opacity-90 transition relative overflow-hidden"
                     // style={{
                     //     backgroundImage: 'url("/buttonbg.svg")',

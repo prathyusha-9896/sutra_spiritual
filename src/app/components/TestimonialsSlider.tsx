@@ -9,19 +9,19 @@ const testimonials = [
     name: 'Priya',
     location: 'Pune, India',
     text: `I cried reading my aura report. It felt like someone finally understood me without me saying a word.`,
-    image: '/profile.png',
+    image: '/priya.png',
   },
   {
     name: 'Aarav',
     location: 'Delhi, India',
     text: `It gave me a deep insight into my energy field. Extremely validating and eye-opening.`,
-    image: '/profile.png',
+    image: '/arav.png',
   },
   {
     name: 'Meera',
     location: 'Bangalore, India',
     text: `This aura reading was so accurate it gave me goosebumps. I highly recommend it.`,
-    image: '/profile.png',
+    image: '/meera.png',
   },
 ];
 

@@ -42,10 +42,10 @@ export default function HowItWorksSection() {
                     <div className="max-w-3xl z-10 text-left">
                       <h3 className="text-3xl sm:text-4xl lg:text-[48px] leading-[140%] font-bold mb-2">Tap to Begin</h3>
                       <p className="text-sm sm:text-base lg:text-[20px] mb-1">Get a personal aura scan that finally gives you answers, clarity, and peace of mind.</p>
-                      <p className="text-sm sm:text-base lg:text-[20px] mb-1">₹499 – Get My Aura Report Now</p>
+                      <button onClick={() => window.location.href = "https://rzp.io/rzp/w608lnD"} className="text-sm sm:text-base lg:text-[20px] mb-1">₹499 – Get My Aura Report Now</button>
                     </div>
                     
-                    <button
+                    <button onClick={() => window.location.href = "https://rzp.io/rzp/w608lnD"}
                     className="text-black text-[12px] mt-3 bg-[#FFFFFF] sm:text-[14px] lg:text-[14px] font-bold leading-[150%] z-10 rounded-md px-6 py-2 shadow-sm hover:opacity-90 transition relative overflow-hidden"
                     // style={{
                     //     backgroundImage: 'url("/buttonbg.svg")',

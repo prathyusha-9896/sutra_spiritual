@@ -69,7 +69,7 @@ export default function WhyPeopleLoveIt() {
 
       {/* Offer Box */}
       <div className="text-left text-white bg-[#0FBDDF] max-w-6xl mx-auto rounded-xl overflow-hidden px-6 sm:px-12 py-10">
-        <div className="flex md:flex-row flex-col justify-between items-center w-full">
+        <div className="flex md:flex-row flex-col justify-between items-center w-full gap-10">
           <div className="max-w-2xl z-10 md:text-left text-center">
             <h3 className="text-3xl sm:text-4xl lg:text-[48px] leading-[140%] font-bold mb-2">
               Today Only
@@ -85,7 +85,7 @@ export default function WhyPeopleLoveIt() {
             </p>
           </div>
 
-          <button
+          <button onClick={() => window.location.href = "https://rzp.io/rzp/w608lnD"}
             className="text-black text-[12px] bg-[#ffffff] sm:text-[14px] lg:text-[14px] font-bold leading-[150%] z-10 rounded-md px-6 py-2 shadow-sm hover:opacity-90 transition relative overflow-hidden"
           >
             Get My Aura Report Now

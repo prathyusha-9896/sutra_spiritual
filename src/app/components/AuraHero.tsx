@@ -46,10 +46,10 @@ export default function AuraHero() {
                     Today&apos;s orders get their report <br /> delivered within 3 hours
                   </span>
                 </div>
-                <div className="bg-[#FE5957] frances-font text-white md:px-4 px-2 py-2 rounded-md text-[24px] leading-[32px] font-bold text-center whitespace-nowrap">
+                <button onClick={() => window.location.href = "https://rzp.io/rzp/w608lnD"} className="bg-[#FE5957] frances-font text-white md:px-4 px-2 py-2 rounded-md text-[24px] leading-[32px] font-bold text-center whitespace-nowrap">
                   ₹499 Only<br />
                   <span className="text-[24px] leading-[32px] font-bold text-white">(Regular Price ₹1,499)</span>
-                </div>
+                </button>
               </div>
             </div>
 
